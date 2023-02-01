@@ -35,7 +35,7 @@ public class main {
             System.out.println(wordSet.getWorldvalue());
         }
 
-
+        ctx.close();
 
 
     }

@@ -8,7 +8,7 @@
 <bean id="register" class="B.AutoWired.service.WordRegisterService">
     <constructor-arg ref="Dao"></constructor-arg>
 </bean>
-    <bean id="search" class="B.AutoWired.service.WordSearchService">
+    <bean id="search" class="B.AutoWired.service.WordSearchService" init-method="initMethod" destroy-method="destroyMethod">
         <constructor-arg ref="Dao"/>
     </bean>
 </beans>
